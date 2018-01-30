@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.annotation.JsonView;
 
-import bitchbot.backend.app.domain.JsonViews;
 import bitchbot.backend.app.domain.Input;
-
+import bitchbot.backend.app.domain.JsonViews;
 import rita.RiLexicon;
 import rita.RiMarkov;
 import rita.RiString;

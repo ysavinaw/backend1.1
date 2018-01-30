@@ -27,9 +27,6 @@ ext.jacksonDateTimeVersion = '2.8.7'
 
 ext['hibernate.version'] = hibernateVersion
 
-dependencies {
-	  compile files(fileTree(dir: 'lib', includes: '*.jar'))
-	  }
 
 repositories {
     mavenCentral()
@@ -55,6 +52,7 @@ dependencies {
     compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonDateTimeVersion}")
     compile("org.hibernate:hibernate-java8:${hibernateVersion}")
     compile('io.jsonwebtoken:jjwt:0.7.0')
+    compile files ('lib/rita.jar')
     
     	compile('org.webjars:webjars-locator:0.32')
 	compile('org.webjars:bootstrap:3.3.7-1')
