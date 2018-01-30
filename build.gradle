@@ -7,6 +7,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+  
     }
 }
 
@@ -26,6 +27,9 @@ ext.jacksonDateTimeVersion = '2.8.7'
 
 ext['hibernate.version'] = hibernateVersion
 
+dependencies {
+	  compile files(fileTree(dir: 'lib', includes: '*.jar'))
+	  }
 
 repositories {
     mavenCentral()
